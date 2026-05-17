@@ -1,0 +1,35 @@
+======================================================================
+MEDICAL DATASET VALIDATION REPORT
+======================================================================
+
+[STATS] DOCUMENT STATISTICS
+----------------------------------------------------------------------
+Total Documents: 50
+Document Types: {'content': 50}
+Average Content Length: 699 characters
+Content Length Range: 466 - 958 characters
+Total Characters: 34,943
+
+[COVERAGE] EVALUATION COVERAGE ANALYSIS
+----------------------------------------------------------------------
+Drug Coverage: 12/12 (100.0%)
+  Covered: amlodipine, amoxicillin, aspirin, atorvastatin, canagliflozin, ciprofloxacin, empagliflozin, insulin, lisinopril, metformin, metoprolol, semaglutide
+Disease Coverage: 6/7 (85.7%)
+  Covered: Type 2 Diabetes, cardiovascular disease, heart failure, hypercholesterolemia, hypertension, myocardial infarction
+Mechanism Coverage: 9/10 (90.0%)
+  Covered: ACE inhibitor, AMPK, GLP-1 agonist, SGLT2 inhibitor, beta blocker, calcium channel blocker, fluoroquinolone, penicillin, statin
+Protein Coverage: 10/10 (100.0%)
+  Covered: COX-1, COX-2, DNA gyrase, GLP-1 receptor, HMG-CoA reductase, L-type calcium channels, SGLT2, angiotensin-converting enzyme, beta-1 adrenergic receptors, penicillin-binding proteins
+
+[VALIDATION] VALIDATION RESULTS
+----------------------------------------------------------------------
+[PASS] Document count meets target (50-100)
+[PASS] Drug coverage excellent (100.0%)
+[PASS] Mechanism coverage good (90.0%)
+
+[ASSESSMENT] OVERALL ASSESSMENT
+----------------------------------------------------------------------
+[SUCCESS] DATASET READY FOR USE
+The dataset meets all quality standards and is ready for GraphRAG ingestion.
+
+======================================================================

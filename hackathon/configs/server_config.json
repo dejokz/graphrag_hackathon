@@ -1,0 +1,59 @@
+{
+  "db_config": {
+    "hostname": "YOUR_SAVANNA_HOSTNAME",
+    "restppPort": "443",
+    "gsPort": "443",
+    "getToken": true,
+    "default_timeout": 300,
+    "default_mem_threshold": 5000,
+    "default_thread_limit": 8
+  },
+  "graphrag_config": {
+    "reuse_embedding": true,
+    "ecc": "http://graphrag-ecc:8001",
+    "chat_history_api": "http://chat-history:8002",
+    "chunker_config": {
+      "chunk_size": 2048,
+      "overlap_size": 256,
+      "chunker": "semantic",
+      "method": "percentile",
+      "threshold": 0.93
+    }
+  },
+  "llm_config": {
+    "token_limit": 4096,
+    "authentication_configuration": {
+      "GOOGLE_API_KEY": "${GOOGLE_API_KEY}"
+    },
+    "embedding_service": {
+      "embedding_model_service": "genai",
+      "model_name": "models/text-embedding-004",
+      "dimensions": 768
+    },
+    "completion_service": {
+      "llm_service": "genai",
+      "llm_model": "gemini-2.0-flash",
+      "model_kwargs": {
+        "temperature": 0
+      },
+      "prompt_path": "./common/prompts/google_gemini/"
+    },
+    "multimodal_service": {
+      "llm_service": "genai",
+      "llm_model": "gemini-2.0-flash",
+      "model_kwargs": {
+        "temperature": 0
+      }
+    }
+  },
+  "chat_config": {
+    "apiPort": "8002",
+    "dbPath": "chats.db",
+    "dbLogPath": "db.log",
+    "logPath": "requestLogs.jsonl",
+    "conversationAccessRoles": [
+      "superuser",
+      "globaldesigner"
+    ]
+  }
+}

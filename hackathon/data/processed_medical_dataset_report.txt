@@ -1,0 +1,53 @@
+Medical Dataset Validation Report
+==================================================
+
+Processing Statistics:
+  Total Documents: 1327
+  Valid Documents: 1135
+  Invalid Documents: 164
+  Duplicate Documents Removed: 28
+  Total Characters: 5,933,237
+  Estimated Tokens: 1,482,871
+  Token Progress: 1,482,871 / 1,000,000 (148.3%)
+
+Validation Status:
+  ❌ FAIL - 164 invalid documents
+
+Validation Errors:
+
+  1. Document: fda_lisinopril_pharmacology
+     - Content too long: 20723 characters
+
+  2. Document: fda_losartan_pharmacology
+     - Content too long: 36791 characters
+
+  3. Document: fda_atorvastatin_pharmacology
+     - Content too long: 28062 characters
+
+  4. Document: fda_simvastatin_pharmacology
+     - Content too long: 28061 characters
+
+  5. Document: fda_pravastatin_pharmacology
+     - Content too long: 28061 characters
+
+  6. Document: fda_amlodipine_pharmacology
+     - Content too long: 28060 characters
+
+  7. Document: fda_diltiazem_pharmacology
+     - Content too long: 22948 characters
+
+  8. Document: fda_verapamil_pharmacology
+     - Content too long: 28059 characters
+
+  9. Document: fda_felodipine_pharmacology
+     - Content too long: 36793 characters
+
+  10. Document: fda_amiodarone_pharmacology
+     - Content too long: 28060 characters
+
+  ... and 154 more errors
+
+Data Quality Assessment:
+  ✅ PASS - Meets 1M token requirement
+
+Note: Detailed source distribution analysis requires additional processing

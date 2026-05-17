@@ -5,7 +5,10 @@ COPY common/requirements.txt requirements.txt
  
 RUN apt-get update && apt-get upgrade -y
 RUN pip install -r requirements.txt
- 
+
+RUN rm -rf /code/common
+COPY common /code/common
+
 COPY report-service/app /code
 COPY common /code/common
 

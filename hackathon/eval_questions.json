@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q01",
+    "question": "What is the mechanism of action of metformin?",
+    "reference_answer": "Metformin works primarily by activating AMP-activated protein kinase (AMPK), which leads to decreased hepatic glucose production, increased insulin sensitivity, and enhanced peripheral glucose uptake. It also inhibits mitochondrial complex I, reducing cellular energy levels and triggering AMPK activation.",
+    "category": "simple"
+  },
+  {
+    "id": "q02",
+    "question": "What are the common side effects of GLP-1 receptor agonists?",
+    "reference_answer": "Common side effects of GLP-1 receptor agonists include nausea, vomiting, diarrhea, and abdominal pain. These gastrointestinal effects are usually dose-dependent and tend to decrease over time. Less common side effects include pancreatitis and injection site reactions.",
+    "category": "simple"
+  },
+  {
+    "id": "q03",
+    "question": "How does aspirin prevent blood clots?",
+    "reference_answer": "Aspirin prevents blood clots by irreversibly inhibiting cyclooxygenase-1 (COX-1), which reduces the production of thromboxane A2, a potent promoter of platelet aggregation. This antiplatelet effect lasts for the lifespan of the platelet (7-10 days).",
+    "category": "simple"
+  },
+  {
+    "id": "q04",
+    "question": "What is the role of the BRCA1 gene in cancer?",
+    "reference_answer": "The BRCA1 gene produces a tumor suppressor protein that helps repair damaged DNA and plays a role in maintaining genomic stability. Mutations in BRCA1 significantly increase the risk of breast cancer, ovarian cancer, and to a lesser extent, prostate and pancreatic cancer.",
+    "category": "simple"
+  },
+  {
+    "id": "q05",
+    "question": "Which drugs used for Type 2 diabetes share a common metabolic pathway with metformin, and how do they differ in their targets?",
+    "reference_answer": "Metformin activates the AMPK signaling pathway, which is also influenced by other diabetes medications but through different mechanisms. GLP-1 receptor agonists (like semaglutide) activate the GLP-1 receptor to stimulate insulin secretion, which works downstream of AMPK. SGLT2 inhibitors (like empagliflozin) block glucose reabsorption in the kidneys via the SGLT2 protein, operating on an entirely different pathway. Thiazolidinediones (like pioglitazone) activate PPAR-gamma, which modulates insulin sensitivity through nuclear receptor signaling rather than AMPK.",
+    "category": "relational"
+  },
+  {
+    "id": "q06",
+    "question": "Compare the side effect profiles of GLP-1 agonists and SGLT2 inhibitors, and explain which patient populations should avoid each class.",
+    "reference_answer": "GLP-1 agonists primarily cause gastrointestinal side effects (nausea, vomiting, diarrhea) and carry a rare risk of pancreatitis. They should be avoided in patients with a history of pancreatitis or medullary thyroid carcinoma. SGLT2 inhibitors increase the risk of genital mycotic infections, urinary tract infections, and in rare cases, diabetic ketoacidosis and Fournier's gangrene. They should be avoided in patients with severe renal impairment (eGFR < 30), frequent urinary tract infections, or a history of diabetic ketoacidosis.",
+    "category": "multi_hop"
+  },
+  {
+    "id": "q07",
+    "question": "What drugs target the SGLT2 protein and what conditions are they used to treat beyond diabetes?",
+    "reference_answer": "SGLT2 inhibitors include empagliflozin, dapagliflozin, canagliflozin, and ertugliflozin. Beyond Type 2 diabetes, empagliflozin and dapagliflozin are approved for heart failure (both reduced and preserved ejection fraction), and dapagliflozin is also approved for chronic kidney disease. These benefits appear to be independent of their glucose-lowering effects.",
+    "category": "relational"
+  },
+  {
+    "id": "q08",
+    "question": "How does the insulin signaling pathway relate to both Type 1 and Type 2 diabetes?",
+    "reference_answer": "In Type 1 diabetes, autoimmune destruction of pancreatic beta cells leads to absolute insulin deficiency, meaning the insulin signaling pathway cannot be activated at all without exogenous insulin. In Type 2 diabetes, the insulin signaling pathway is impaired through insulin resistance - cells (particularly muscle, liver, and adipose tissue) have reduced sensitivity to insulin despite normal or elevated insulin levels. Both conditions ultimately result in impaired glucose uptake and hyperglycemia, but through different mechanisms in the pathway.",
+    "category": "multi_hop"
+  },
+  {
+    "id": "q09",
+    "question": "What is the connection between the TP53 gene and cancer treatment resistance?",
+    "reference_answer": "TP53 encodes the p53 tumor suppressor protein that regulates cell cycle arrest, DNA repair, and apoptosis in response to cellular stress. When TP53 is mutated (found in over 50% of human cancers), cells lose their ability to undergo apoptosis in response to DNA damage, leading to resistance against chemotherapy and radiation therapy that work by inducing DNA damage. This makes TP53 status a critical biomarker for predicting treatment response.",
+    "category": "relational"
+  },
+  {
+    "id": "q10",
+    "question": "Explain how statins work and why liver function monitoring is important during statin therapy.",
+    "reference_answer": "Statins work by competitively inhibiting HMG-CoA reductase, the rate-limiting enzyme in the mevalonate pathway responsible for cholesterol biosynthesis in the liver. This reduces hepatic cholesterol production, leading to upregulation of LDL receptors and increased clearance of LDL cholesterol from the blood. Liver function monitoring is important because statins can cause hepatotoxicity in rare cases, manifesting as elevated transaminases (ALT/AST). The liver is both the primary site of statin action and the organ most susceptible to statin-related injury due to first-pass metabolism.",
+    "category": "multi_hop"
+  },
+  {
+    "id": "q11",
+    "question": "What is the mechanism of action of ACE inhibitors?",
+    "reference_answer": "ACE inhibitors block the angiotensin-converting enzyme, which converts angiotensin I to angiotensin II. By reducing angiotensin II levels, ACE inhibitors cause vasodilation, reduced aldosterone secretion, and decreased sodium and water retention, collectively lowering blood pressure and reducing cardiovascular strain.",
+    "category": "simple"
+  },
+  {
+    "id": "q12",
+    "question": "Which antibiotics are contraindicated in children and why?",
+    "reference_answer": "Tetracyclines are contraindicated in children under 8 years because they cause permanent tooth discoloration and can affect bone growth. Fluoroquinolones are generally avoided in pediatric patients due to concerns about musculoskeletal toxicity, including tendon damage and effects on growing cartilage. Chloramphenicol carries a risk of 'gray baby syndrome' in neonates due to their immature liver metabolism.",
+    "category": "relational"
+  },
+  {
+    "id": "q13",
+    "question": "How do beta-blockers differ in their effects on the cardiovascular system compared to calcium channel blockers?",
+    "reference_answer": "Beta-blockers reduce heart rate, decrease myocardial contractility, and lower cardiac output by blocking beta-adrenergic receptors, primarily beta-1 receptors in the heart. Calcium channel blockers (dihydropyridine type like amlodipine) primarily cause peripheral vasodilation by blocking L-type calcium channels in vascular smooth muscle, reducing peripheral resistance. Non-dihydropyridine CCBs (like diltiazem) also reduce heart rate and contractility similarly to beta-blockers but through a different mechanism.",
+    "category": "multi_hop"
+  },
+  {
+    "id": "q14",
+    "question": "What is the relationship between H. pylori infection and peptic ulcer disease?",
+    "reference_answer": "Helicobacter pylori infection is the most common cause of peptic ulcer disease. The bacterium colonizes the gastric epithelium, produces urease that creates an alkaline microenvironment, and causes chronic inflammation. This leads to disruption of the mucosal barrier, increased gastric acid secretion, and eventual ulcer formation. Eradication of H. pylori with antibiotic therapy dramatically reduces ulcer recurrence.",
+    "category": "relational"
+  },
+  {
+    "id": "q15",
+    "question": "What role does the CYP450 enzyme system play in drug interactions?",
+    "reference_answer": "The cytochrome P450 enzyme system in the liver is responsible for metabolizing many drugs. Drug interactions occur when one drug inhibits or induces a CYP450 enzyme that metabolizes another drug. Inhibitors (like ketoconazole inhibiting CYP3A4) reduce the metabolism of other drugs, increasing their blood levels and risk of toxicity. Inducers (like rifampin inducing CYP3A4) increase enzyme activity, reducing blood levels and effectiveness of other drugs metabolized by the same enzyme.",
+    "category": "relational"
+  },
+  {
+    "id": "q16",
+    "question": "What is warfarin's mechanism and what factors complicate its dosing?",
+    "reference_answer": "Warfarin inhibits vitamin K epoxide reductase, preventing the reactivation of vitamin K needed for synthesis of clotting factors II, VII, IX, and X. Its dosing is complicated by a narrow therapeutic index, genetic variability in CYP2C9 metabolism, dietary vitamin K intake, numerous drug interactions through CYP450 enzymes, and the need for regular INR monitoring to maintain anticoagulation within the target range.",
+    "category": "multi_hop"
+  },
+  {
+    "id": "q17",
+    "question": "How do SSRI antidepressants work and what is serotonin syndrome?",
+    "reference_answer": "SSRIs (Selective Serotonin Reuptake Inhibitors) work by blocking the serotonin transporter (SERT), preventing reuptake of serotonin from the synaptic cleft back into the presynaptic neuron. This increases serotonin availability at postsynaptic receptors. Serotonin syndrome is a potentially life-threatening condition caused by excessive serotonin activity, typically when SSRIs are combined with other serotonergic drugs. Symptoms include agitation, confusion, rapid heart rate, high blood pressure, dilated pupils, muscle rigidity, and in severe cases, seizures and coma.",
+    "category": "multi_hop"
+  },
+  {
+    "id": "q18",
+    "question": "What diagnostic tests are used to diagnose diabetes mellitus?",
+    "reference_answer": "The main diagnostic tests for diabetes mellitus include: HbA1c test (result of 6.5% or higher), fasting plasma glucose (126 mg/dL or higher), oral glucose tolerance test (200 mg/dL or higher at 2 hours), and random plasma glucose (200 mg/dL or higher with classic symptoms). HbA1c reflects average blood glucose over the past 2-3 months and does not require fasting.",
+    "category": "simple"
+  },
+  {
+    "id": "q19",
+    "question": "Trace the path of a drug from oral administration to its molecular target, identifying the key organs and processes involved.",
+    "reference_answer": "After oral administration, a drug is absorbed through the gastrointestinal tract (primarily the small intestine). It then passes through the portal vein to the liver, where it undergoes first-pass metabolism by CYP450 enzymes, reducing the amount of active drug reaching systemic circulation. The drug enters the bloodstream and is distributed throughout the body via the cardiovascular system. It reaches its target tissue and binds to its molecular target (receptor, enzyme, or ion channel). After exerting its effect, the drug returns to the liver for further metabolism, and the metabolites are excreted primarily by the kidneys through urine or by the liver through bile.",
+    "category": "multi_hop"
+  },
+  {
+    "id": "q20",
+    "question": "What is the relationship between obesity, insulin resistance, and metabolic syndrome?",
+    "reference_answer": "Obesity, particularly visceral adiposity, is a primary driver of insulin resistance. Excess adipose tissue releases pro-inflammatory cytokines (TNF-alpha, IL-6) and free fatty acids that interfere with insulin signaling in muscle, liver, and adipose tissue. Insulin resistance leads to compensatory hyperinsulinemia, which promotes further weight gain and dyslipidemia. Metabolic syndrome represents a cluster of these interconnected conditions: central obesity, insulin resistance, hypertension, dyslipidemia (high triglycerides, low HDL), and elevated fasting glucose, all of which increase cardiovascular disease and Type 2 diabetes risk.",
+    "category": "multi_hop"
+  }
+]
