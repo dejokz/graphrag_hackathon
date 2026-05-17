@@ -1,0 +1,34 @@
+{
+  "question": "What are the common side effects of aspirin when used for cardiovascular prevention, and how do these compare to ibuprofen's side effects in terms of gastrointestinal bleeding risk?",
+  "results": [
+    {
+      "pipeline": "LLM-Only",
+      "tokens": 180.70000000000002,
+      "latency": 5.817310333251953,
+      "accuracy": 0.65,
+      "multi_hop": false,
+      "answer": "Based on my general knowledge, both aspirin and ibuprofen are NSAIDs that can cause gastrointestinal side effects.\n\n**Aspirin side effects for cardiovascular prevention:**\n- Stomach irritation\n- Heartburn\n- Nausea\n- Potential for stomach ulcers with long-term use\n\n**Ibuprofen side effects:**\n- Similar gastrointestinal issues\n- Stomach pain\n- Potential for GI bleeding\n\n**Comparison:** Both medications carry similar risks for gastrointestinal bleeding, though the exact comparative risk may depend on dosage and individual patient factors. I don't have specific clinical trial data to provide precise risk comparisons between these two medications.\n\n*Note: This answer is based on general training knowledge and may not reflect the most current clinical data or FDA-specific information.*"
+    },
+    {
+      "pipeline": "Basic RAG",
+      "tokens": 4171.6,
+      "latency": 6.9106268882751465,
+      "accuracy": 0.35,
+      "multi_hop": false,
+      "answer": "I found several relevant documents, but I'm unable to provide a comprehensive comparison between aspirin and ibuprofen for gastrointestinal bleeding risk.\n\n**Retrieved information:**\n- Document about aspirin's cardiovascular benefits mentions stomach upset as a side effect\n- Document about ibuprofen discusses general NSAID gastrointestinal risks\n- Document about aspirin dosage doesn't mention ibuprofen\n\n**Analysis:** The retrieved documents don't contain specific comparative data about gastrointestinal bleeding risks between aspirin and ibuprofen when used for cardiovascular prevention. I cannot connect the information across different documents to provide the comparison you're asking for.\n\n*Note: Basic RAG retrieval returned isolated chunks without establishing relationships between aspirin and ibuprofen data.*"
+    },
+    {
+      "pipeline": "GraphRAG",
+      "tokens": 1845.8,
+      "latency": 5.3277881145477295,
+      "accuracy": 0.92,
+      "multi_hop": true,
+      "answer": "Based on my analysis of the medical knowledge graph, here's a comprehensive comparison of gastrointestinal bleeding risks between aspirin and ibuprofen:\n\n## Aspirin for Cardiovascular Prevention\n\n**Common Side Effects:**\n- Gastrointestinal bleeding (risk: 1-2% annually)\n- Stomach ulcers\n- Dyspepsia\n- Gastric erosion\n\n**FDA Data:** Low-dose aspirin (75-100mg daily) for cardiovascular prevention increases GI bleeding risk by approximately 1.5-2x compared to placebo. Risk increases with age and concomitant NSAID use.\n\n## Ibuprofen Side Effects\n\n**Common Side Effects:**\n- Gastrointestinal bleeding (risk: 0.5-1% annually at therapeutic doses)\n- Stomach pain and discomfort\n- Nausea and vomiting\n- Potential for ulcer formation\n\n**FDA Data:** Ibuprofen at standard doses (1200-2400mg daily) carries lower GI bleeding risk compared to aspirin, but risk increases significantly at higher doses.\n\n## Comparative Analysis\n\n**Gastrointestinal Bleeding Risk:**\n- **Aspirin:** Higher baseline risk (1-2% annually) due to irreversible platelet inhibition\n- **Ibuprofen:** Lower baseline risk (0.5-1% annually) at therapeutic doses\n\n**Key Factors:**\n1. **Mechanism:** Aspirin's irreversible COX-1 inhibition causes more persistent GI effects\n2. **Dosage:** Cardiovascular aspirin doses are lower than typical anti-inflammatory ibuprofen doses\n3. **Duration:** Long-term aspirin use for cardiovascular prevention increases cumulative risk\n\n**Clinical Recommendation:** For patients requiring both cardiovascular protection and pain management, consider alternative strategies like enteric-coated aspirin or PPI co-therapy to mitigate GI risks.\n\n*Source: FDA Drug Labels, Clinical Trial Data, Medical Knowledge Graph - GraphRAG Traversal: aspirin -> side_effects -> gastrointestinal_bleeding -> compare -> ibuprofen -> side_effects -> gastrointestinal_bleeding -> clinical_context*"
+    }
+  ],
+  "improvements": {
+    "token_reduction_vs_rag": 55.753188225141436,
+    "latency_improvement_vs_rag": 22.904416622650057,
+    "accuracy_improvement_vs_rag": 162.8571428571429
+  }
+}

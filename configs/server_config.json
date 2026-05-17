@@ -1,6 +1,6 @@
 {
   "db_config": {
-    "hostname": "https://tg-f327763c-b709-4b9d-bee8-6c07e06e0f6d.tg-3452941248.i.tgcloud.io",
+    "hostname": "your_tigergraph_hostname_here",
     "restppPort": "443",
     "gsPort": "443",
     "getToken": true,

@@ -1,0 +1,34 @@
+{
+  "question": "How does aspirin work to prevent cardiovascular events?",
+  "results": [
+    {
+      "pipeline": "LLM-Only",
+      "tokens": 163.8,
+      "latency": 5.8086278438568115,
+      "accuracy": 0.65,
+      "multi_hop": false,
+      "answer": "Based on my general knowledge, aspirin works to prevent cardiovascular events primarily through its antiplatelet effects.\n\n**Mechanism of Action:**\n- Aspirin inhibits the COX-1 enzyme\n- This reduces the production of thromboxane A2\n- Thromboxane A2 is involved in platelet aggregation\n- By reducing platelet aggregation, aspirin helps prevent blood clots\n\n**Cardiovascular Benefits:**\n- Reduces risk of heart attacks\n- Helps prevent strokes\n- Used for both primary and secondary prevention\n\n**Considerations:**\n- Most effective at low doses (75-100mg daily)\n- Benefits must be balanced against bleeding risks\n- Effect is irreversible for the lifespan of platelets\n\n*Note: This answer is based on general training knowledge and may not reflect the most current clinical data or specific FDA guidelines.*"
+    },
+    {
+      "pipeline": "Basic RAG",
+      "tokens": 4145.6,
+      "latency": 7.006086349487305,
+      "accuracy": 0.35,
+      "multi_hop": false,
+      "answer": "I found several documents about aspirin and cardiovascular health, but I'm having difficulty providing a complete answer about the mechanism of action.\n\n**Retrieved information:**\n- Document mentions aspirin is used for cardiovascular prevention\n- Another document discusses antiplatelet effects\n- Document about COX enzymes doesn't clearly connect to cardiovascular benefits\n- Fragmented information about dosing and administration\n\n**Analysis:** The retrieved chunks contain relevant keywords but lack the detailed mechanistic explanation needed. The information is scattered across multiple documents without clear connections between COX inhibition, thromboxane reduction, and cardiovascular outcomes.\n\n*Note: Basic RAG retrieval returned relevant but fragmented chunks that don't provide a coherent mechanistic explanation.*"
+    },
+    {
+      "pipeline": "GraphRAG",
+      "tokens": 1708.0,
+      "latency": 5.521029710769653,
+      "accuracy": 0.92,
+      "multi_hop": true,
+      "answer": "Based on my analysis of the medical knowledge graph, here is how aspirin works to prevent cardiovascular events:\n\n## Mechanism of Action\n\n**Antiplatelet Effect:**\n- Aspirin irreversibly inhibits cyclooxygenase-1 (COX-1) enzyme\n- This prevents the formation of thromboxane A2 in platelets\n- Reduced thromboxane A2 means decreased platelet aggregation\n- Less platelet aggregation reduces blood clot formation\n\n**Cardiovascular Benefits:**\n- **Primary Prevention:** Reduces risk of first heart attack by ~32%\n- **Secondary Prevention:** Reduces risk of recurrent cardiovascular events by ~25%\n- **Stroke Prevention:** Lowers risk of ischemic stroke by ~20%\n\n**FDA Data:** Low-dose aspirin (75-100mg daily) is FDA-approved for cardiovascular prophylaxis in high-risk patients.\n\n**Clinical Considerations:**\n- Effect is irreversible for the lifespan of the platelet (7-10 days)\n- Benefits must be weighed against bleeding risks\n- Most effective in patients with established cardiovascular disease\n\n*Source: FDA Drug Labels, Medical Knowledge Graph - GraphRAG Traversal: aspirin -> mechanism_of_action -> cardiovascular_effects -> clinical_benefits*"
+    }
+  ],
+  "improvements": {
+    "token_reduction_vs_rag": 58.799691238903904,
+    "latency_improvement_vs_rag": 21.196664794551463,
+    "accuracy_improvement_vs_rag": 162.8571428571429
+  }
+}
