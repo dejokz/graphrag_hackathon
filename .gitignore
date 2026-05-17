@@ -59,4 +59,6 @@ test.py
 
 # Results and temporary data
 hackathon/results/
+benchmark_results.json
+*.json.bak
 hackathon/.env
